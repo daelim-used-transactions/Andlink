@@ -23,7 +23,7 @@ public class Network extends AsyncTask<Map<String, String>,Integer,String> {
     protected String doInBackground(Map<String, String>... maps) {
 
         // HTTP 요청 준비 작업
-        HttpClient.Builder http = new HttpClient.Builder("POST", "http://117.17.34.164:8080/android2");
+        HttpClient.Builder http = new HttpClient.Builder("POST", "http://172.16.1.14:8080/android2");
 
         //파라미터 전송
          http.addAllParameters(maps[0]);
